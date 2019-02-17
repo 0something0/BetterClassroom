@@ -1,3 +1,10 @@
+* {
+ box-sizing: border-box;
+}
+*:before,
+*:after {
+ box-sizing: border-box;
+}
 
 html,
 
@@ -9,9 +16,21 @@ body {
     font-family:"Comic Sans MS";
 
 }
+
+.main-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* height of your footer */
+}
+/*
 #container {
-    min-height:100%;
-    position:relative;
+ min-height: 100vh; /* will cover the 100% of viewport
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* height of your footer 
 }
 #header {
     background:#fffff;
@@ -22,15 +41,15 @@ body {
 }
 #body {
     padding:10px;
-    padding-bottom:100px;   /* Height of the footer */
+    padding-bottom:vh;   /* Height of the footer 
     text-align: center;
     margin: "2em auto";
     color: #444444;
     text-indent: 2;
-
+*/
 
 }
-#footer {
+footer {
     position:relative;
     bottom:0;
     width:100%;
@@ -39,6 +58,7 @@ body {
     color:#ffffff;
     text-align: center;
     font-size: :10;
+    padding:10px;
 
 }
 a {
